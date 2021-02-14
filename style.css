@@ -1,0 +1,41 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.botao {
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-size: 200%;
+}
+
+.botao-gradiente {
+  transition: 0.5s ease-in;
+  background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312);
+}
+
+.botao:hover {
+  background-position: right;
+}
+
+.botao-ativo {
+  background-color: green;
+  box-shadow: 0 15px 0 #075e07;
+}
+
+.botao-ativo:active {
+  box-shadow: none;
+  position: relative;
+  top: 15px;
+}
